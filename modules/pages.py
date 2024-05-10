@@ -32,7 +32,7 @@ def model_page():
     st.write(f"Start Date: {start_date}, End Date: {end_date}")
     
     profit_data = pd.DataFrame({
-        'Metric': ['Profit', 'Profit Percentage'],
+        'Metric': ['Profit/loss', 'Profit/loss Percentage'],
         'Value': [profit, f"{profit_percentage:.2f}%"]
     })
     st.table(profit_data)
@@ -46,15 +46,13 @@ def model_page():
 
 
 
-
-
 def home_page():
     st.title("📈 stonks")
     st.subheader(
         "just another _stonks_ prediction streamlit application")
 
     # st.sidebar.image("assets/notstonks.jpeg", use_column_width=True)
-    # st.divider()
+    st.divider()
 
     with st.container():
         st.header('How to use the site:')
