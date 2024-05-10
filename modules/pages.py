@@ -6,7 +6,7 @@ from modules.utils import load_stock_data, train_model, evaluate_model, plotston
 def model_page():
     st.title('Market analysis')
     st.write("Select a NSE stock from the sidebar and predict closing price of the stock using a linear regression model. Source of data: **_quandl_** public API")
-    st.sidebar.image("assets/stonks.jpeg", use_column_width=True)
+    # st.sidebar.image("assets/stonks.jpeg", use_column_width=True)
     st.sidebar.divider()
     st.divider()
 
@@ -53,8 +53,8 @@ def home_page():
     st.subheader(
         "just another _stonks_ prediction streamlit application")
 
-    st.sidebar.image("assets/notstonks.jpeg", use_column_width=True)
-    st.divider()
+    # st.sidebar.image("assets/notstonks.jpeg", use_column_width=True)
+    # st.divider()
 
     with st.container():
         st.header('How to use the site:')
